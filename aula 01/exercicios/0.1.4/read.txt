@@ -8,4 +8,4 @@ Faça uma função que irá gerar quantos quilos a escola deve comprar.
 
 Considere que cada banana pesa em média 90g. 
 
-Além disso, considere uma marge de erro de 20%. 
+Além disso, considere uma marge de erro de 20%
