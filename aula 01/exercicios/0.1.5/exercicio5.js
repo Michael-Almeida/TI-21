@@ -25,8 +25,9 @@ function compra(valorCompra, convenio, cartaoLoja, primeiraCompra) {
   }
 }
 compra(50, true, true, false);
-compra(50, true, false, false);
+/*compra(50, true, false, false);
 compra(50, false, false, false);
 compra(100, false, false, false);
 compra(100.1, true, false, false);
 compra(100, false, false, true);
+*/
