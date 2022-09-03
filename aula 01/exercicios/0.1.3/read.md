@@ -1,0 +1,1 @@
+Enunciado I: Considere o array anos declarado acima. Faça uma função que irá retornar todos os anos que são menores que o ano passado como parâmetro. Você deve fazer o uso do for e a função deve retornar um novo array.
