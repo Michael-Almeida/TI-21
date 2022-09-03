@@ -24,7 +24,7 @@ function compra(valorCompra, convenio, cartaoLoja, primeiraCompra) {
     console.log(`O valor máximo para desconto foi atingido ${valorCompra}`);
   }
 }
-compra(50, true, true, false);
+compra(100, false, false, true);
 /*compra(50, true, false, false);
 compra(50, false, false, false);
 compra(100, false, false, false);
