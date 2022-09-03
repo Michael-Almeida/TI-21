@@ -10,11 +10,9 @@ function compra(valorCompra, convenio, cartaoLoja) {
       `Por ter o cartão da loja ou convênio ganhou 10% de desconto, ficando o valor de R$: ${desconto}`
     );
   } else {
-    console.log(
-      `Não possui cartão da loja nem desconto, valor final é de R$: ${valorCompra}`
-    );
+    console.log(`Não possui benefícios, valor final é de R$: ${valorCompra}`);
   }
 }
 compra(50, true, true);
-compra(50, true, false);
+compra(50, false, true);
 compra(50, false, false);
