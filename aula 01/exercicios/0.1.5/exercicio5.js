@@ -7,7 +7,7 @@ function aplicarDesconto(valorDesconto) {
 }
 
 function compra(valorCompra, convenio, cartaoLoja, primeiraCompra) {
-  // boleanos por padrão não necessitam do ===true pois ele já considera o valor true
+  // boleanos por padrão dentro do if não necessitam do ===true pois ele já considera o valor verdadeiro
   if (cartaoLoja && convenio) {
     desconto = valorCompra - aplicarDesconto(valorCompra * 0.15);
     console.log(
