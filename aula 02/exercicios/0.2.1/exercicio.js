@@ -63,5 +63,11 @@ const serie3 = {
     },
   ],
 };
-console.log(serie1);
+
 const series = [serie1, serie2, serie3];
+console.log(series);
+console.log(
+  series[0].personagens,
+  series[1].personagens,
+  series[2].personagens
+);
