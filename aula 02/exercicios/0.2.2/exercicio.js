@@ -1,13 +1,12 @@
 const usuario = Object.freeze({
-  dadosUsuario: [
-    {
-      nome: 'João',
-      dataNascimento: '24/10/83',
-      genero: 'M',
-      nInscricao: 123456,
-      filme: 'O massacre da serra elétrica',
-    },
-  ],
+  dadosUsuario: {
+    nome: 'João',
+    dataNascimento: '24/10/83',
+    genero: 'M',
+    nInscricao: 123456,
+    filme: 'O massacre da serra elétrica',
+  },
+
   avaliacoes: [
     {
       descricao: 'Não aprofunda os personagens',
