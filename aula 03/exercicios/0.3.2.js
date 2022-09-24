@@ -16,5 +16,13 @@ const tarefas = [
   },
 ];
 //Enunciado 1
+console.log('Tarefas concluídas:');
 const tarefasConcluidas = tarefas.filter(({ concluida }) => concluida === true);
 console.log(tarefasConcluidas);
+
+//enunciado 2
+const tarefasNaoConcluidas = tarefas.filter(
+  ({ concluida }) => concluida === false
+);
+console.log('Tarefas não concluídas:');
+console.log(tarefasNaoConcluidas);
