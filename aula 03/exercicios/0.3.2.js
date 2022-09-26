@@ -26,3 +26,15 @@ const tarefasNaoConcluidas = tarefas.filter(
 );
 console.log('Tarefas não concluídas:');
 console.log(tarefasNaoConcluidas);
+
+//enunciado 3
+/* const concluidasMenosDe30Dias = tarefas.filter(function (tarefa) {
+  if (tarefa.concluida === true && tarefa.dias <= 30) {
+  }
+  console.log(concluidasMenosDe30Dias);
+}); */
+
+const concluidasEMenos30Dias = tarefas.filter(
+  ({ concluida, dias }) => concluida === true && dias < 30
+);
+console.log(concluidasEMenos30Dias);
