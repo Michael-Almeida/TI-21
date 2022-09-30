@@ -36,3 +36,5 @@ const novoArray = objetos.filter(function(array){
 })
  */
 //rever filter
+
+//some() pelo menos algum
