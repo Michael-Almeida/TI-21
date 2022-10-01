@@ -44,7 +44,7 @@ const medicos = [
 console.log(novoArray);
 console.log(medicos); */
 
-const novoAray = medicos.forEach((medico) => {
+medicos.forEach((medico) => {
   switch (medico.genero) {
     case 'feminino':
       medico.apresentacao = `Dr(a) ${medico.nome} ${medico.sobrenome}`;

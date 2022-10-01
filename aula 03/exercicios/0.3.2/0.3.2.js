@@ -25,7 +25,7 @@ const tarefasNaoConcluidas = tarefas.filter(
   ({ concluida }) => concluida === false
 );
 console.log('Tarefas não concluídas:');
-console.log(tarefasNaoConcluidas);
+console.log(tarefasNaoConcluidas.length);
 
 //enunciado 3
 /* const concluidasMenosDe30Dias = tarefas.filter(function (tarefa) {
