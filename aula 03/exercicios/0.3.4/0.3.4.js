@@ -24,3 +24,13 @@ const arquivos = [
     ],
   },
 ];
+
+const novoArray = arquivos.filter((arquivo) => {
+  console.log(arquivo.nome);
+});
+
+listarArquivos = (_arquivo) => {
+  if (arquivos == null) {
+    console.log('vazio');
+  }
+};
