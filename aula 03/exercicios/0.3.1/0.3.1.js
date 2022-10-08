@@ -21,9 +21,16 @@ const filmes = [
   },
 ];
 
-filmes.forEach((filme, indice) => {
+//função com forEach
+/* filmes.forEach((filme, indice) => {
   filme.id = indice + 1;
   console.log(`${indice}- ${filme.nome}: ${filme.lancamento}`);
 });
 
-console.log(filmes);
+console.log(filmes); */
+
+//função com map
+filmes.map((filme, indice) => {
+  const idFilme = (filme.id = indice + 1);
+  console.log(`${idFilme} - ${filme.nome}: ${filme.lancamento}`);
+});
