@@ -30,7 +30,14 @@ const filmes = [
 console.log(filmes); */
 
 //função com map
-filmes.map((filme, indice) => {
-  const idFilme = (filme.id = indice + 1);
-  console.log(`${idFilme} - ${filme.nome}: ${filme.lancamento}`);
+const resultado = filmes.map((filme, indice) => {
+  const id = indice + 1;
+  // const idFilme = (filme.id = indice + 1);
+  //console.log(`${idFilme} - ${filme.nome}: ${filme.lancamento}`);
+  return {
+    id,
+    nome: filme.nome,
+    lancamento: filme.lancamento,
+  };
 });
+console.log(resultado);
