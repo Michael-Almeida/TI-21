@@ -25,12 +25,16 @@ const arquivos = [
   },
 ];
 
-const novoArray = arquivos.filter((arquivo) => {
-  console.log(arquivo.nome);
-});
+let flat = [];
 
-listarArquivos = (_arquivo) => {
-  if (arquivos == null) {
-    console.log('vazio');
-  }
+const extraiArquivo = (_arquivos) => {
+  _arquivos.forEach((arquivo) => {
+    if (!arquivo.arquivos) {
+      flat.push(arquivo);
+      return;
+    }
+    extraiArquivo(arquivo.arquivos);
+  });
 };
+extraiArquivo(arquivos);
+console.log(flat);
