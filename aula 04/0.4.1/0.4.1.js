@@ -76,11 +76,14 @@ const paises = [
 //adicionar propriedade
 const novosDados = paises.map((pais) => {
   const novasMedalhas = pais.medalhas.map((medalha) => {
-    medalha.quantidade = 0;
+    medalha.quantidade = medalha.ganhadores.reduce(
+      (acumulador, next) => acumulador + 1,
+      0
+    );
     return medalha;
   });
   pais.medalhas = novasMedalhas;
   return pais;
 });
 
-console.log(JSON.stringify(novosDados));
+console.log(JSON.stringify(novosDados, undefined, 4));
