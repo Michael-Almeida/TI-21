@@ -10,3 +10,5 @@ let numeros = [10, 20, 80, 90];
   return acc;
 };
 numeros.reduce(callback, 0); */
+
+const numero = numero.reduce((acc, next) => acc + next, 0);
