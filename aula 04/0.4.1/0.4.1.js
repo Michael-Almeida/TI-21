@@ -73,5 +73,14 @@ const paises = [
 ];
 //filter e some
 
+//adicionar propriedade
+const novosDados = paises.map((pais) => {
+  const novasMedalhas = pais.medalhas.map((medalha) => {
+    medalha.quantidade = 0;
+    return medalha;
+  });
+  pais.medalhas = novasMedalhas;
+  return pais;
+});
 
-//
+console.log(JSON.stringify(novosDados));
