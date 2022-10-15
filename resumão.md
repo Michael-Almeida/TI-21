@@ -1,4 +1,9 @@
 forEach() => percorre o array para cada item
 map() => novo Array com itens modificados
 filter() => Retorna um novo array com itens filtrados
-soma() = > boolean que verifica se algum item é satisfaz a condição
+some() => boolean que verifica se algum item é satisfaz a condição
+every() => boolean se todos itens satisfazem a condição
+sort() => ordenação
+reduce() => contabiliza os itens conforme condição
+find() => Acha o item
+findIndex() => Acha o item e retorna a posição
