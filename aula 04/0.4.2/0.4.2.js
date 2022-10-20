@@ -21,3 +21,8 @@ const alunos = [
     ],
   },
 ];
+
+const mediaGeral = alunos.map((nota) => {
+  const somaNotas = (nota.notas += nota.notas);
+  console.log(somaNotas);
+});
