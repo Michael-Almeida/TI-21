@@ -19,5 +19,5 @@ const alunos = [
       { cadeira: 'DW2', nota: 10 },
       { cadeira: 'BD2', nota: 10 },
     ],
-  }
-]
+  },
+];
