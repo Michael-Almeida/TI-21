@@ -22,13 +22,15 @@ const alunos = [
   },
 ];
 
-/* const mediaGeral = alunos.map((nota) => {
-  const somaNotas = (nota.notas += nota.notas);
-  console.log(somaNotas);
-}); */
-const mediaGeral = alunos.reduce((acumulador, _nota) => {
-  const resultado = _nota.notas[i].nota + acumulador;
-  /*  _nota.notas[1].nota; */
-  return resultado;
-}, 0);
-console.log(mediaGeral);
+const mediaAlunos = alunos.map((aluno) => {
+  const notas = aluno.notas;
+  const somaTotal = notas.reduce((acc, _nota) => {
+    const { nota } = _nota;
+    return acc + nota;
+  }, 0);
+  const mediaGeral = somaTotal / notas.length;
+  aluno.mediaGeral = mediaGeral;
+  return aluno;
+});
+
+console.log(mediaAlunos[0]);
