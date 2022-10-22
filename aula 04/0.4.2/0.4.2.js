@@ -22,7 +22,7 @@ const alunos = [
   },
 ];
 
-const mediaAlunos = alunos.map((aluno) => {
+const resultado = alunos.map((aluno) => {
   const notas = aluno.notas;
   //reduce
   const somaTotal = notas.reduce((acumulador, elemento) => {
@@ -35,4 +35,4 @@ const mediaAlunos = alunos.map((aluno) => {
   return aluno;
 });
 
-console.log(mediaAlunos);
+console.log(resultado);
